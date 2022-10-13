@@ -49,7 +49,7 @@ def conn_string(conn, data, addr):
         first_line = data.split(b'\n')[0]
 
         url = first_line.split()[1]
-
+        print(url)
         http_pos = url.find(b'://') #Finding the position of ://
         if(http_pos==-1):
             temp=url
