@@ -24,6 +24,7 @@ buffer_size = args.buffer_size
 def start():    #Main Program
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        print(socket.AF_INET)
         sock.bind(('', listening_port))
         sock.listen(max_connection)
         print("[*] Server started successfully [ %d ]" %(listening_port))
